@@ -6,13 +6,15 @@
 <link rel="stylesheet" type="text/css" href="~/css/style.css" />
 <h1>Lista psów</h1>
 
-<button class="button-29" role="button">
+
 @if (User.Identity.IsAuthenticated)      
 {
+    <button class="button-29" role="button">
     <a asp-action="Create" style="color:white;">Dodaj psa</a>
+    </button>
             
 }
-</button>
+
 
 <table class="table">
     
